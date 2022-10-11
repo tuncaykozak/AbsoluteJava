@@ -17,12 +17,11 @@ public class D_SodaForMice {
         double currentWeight = 120;
         double desiredWeight = 80;
 
-        //double douseOfSweetener = (weightOfSweetenerToKillMouse / mouseWeightInKg);
+        // double douseOfSweetener = (weightOfSweetenerToKillMouse / mouseWeightInKg);
 
-        //double limitOfSweetener = desiredWeight * douseOfSweetener;
+        // double limitOfSweetener = desiredWeight * douseOfSweetener;
 
         System.out.println((weightOfSweetenerToKillMouse/mouseWeightInKg * desiredWeight / FRACTION) + " soda pop that my friend can drink");
-
 
 
     }
