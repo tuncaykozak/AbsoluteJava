@@ -1,10 +1,8 @@
-import java.util.Scanner;
-
 public class Q2 {
 
     public static void main(String[] args) {
 
-        Scanner keyboard = new Scanner(System.in);
+        java.util.Scanner keyboard = new java.util.Scanner(System.in);
 
         System.out.print("Enter number of your coupons : ");
         int coupon = keyboard.nextInt();

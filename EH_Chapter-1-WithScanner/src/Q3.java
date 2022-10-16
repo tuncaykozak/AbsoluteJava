@@ -4,7 +4,7 @@ public class Q3 {
 
     public static void main(String[] args) {
 
-        Scanner keyboard = new Scanner(System.in);
+        java.util.Scanner keyboard = new java.util.Scanner(System.in);
 
         System.out.print("Enter first word : ");
         String first = keyboard.next();

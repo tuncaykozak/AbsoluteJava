@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Q10 {
 
     // 10 g = 10000 mg
@@ -7,7 +5,7 @@ public class Q10 {
 
     public static void main(String[] args) {
 
-        Scanner keyboard = new Scanner(System.in);
+        java.util.Scanner keyboard = new java.util.Scanner(System.in);
 
         System.out.print("Enter the caffeine(mg) of 12-ounce coke : ");
         int caffeineOfCoke = keyboard.nextInt();

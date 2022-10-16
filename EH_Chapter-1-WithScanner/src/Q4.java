@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Q4 {
 
     public static final double FRACTION = 0.001;
@@ -16,7 +14,7 @@ public class Q4 {
         double mouseWeightInKg = 0.2; // kg
         double weightOfSweetenerToKillMouse = 0.00031; // kg
 
-        Scanner keyboard = new Scanner(System.in);
+        java.util.Scanner keyboard = new java.util.Scanner(System.in);
 
         System.out.print("Enter current weight : ");
         int currentWeight = keyboard.nextInt();
@@ -24,7 +22,7 @@ public class Q4 {
         System.out.print("Enter desired weight : ");
         int desiredWeight = keyboard.nextInt();
 
-        System.out.println((weightOfSweetenerToKillMouse/mouseWeightInKg * desiredWeight / FRACTION) + " soda pop that my friend can drink");
+        System.out.println((weightOfSweetenerToKillMouse / mouseWeightInKg * desiredWeight / FRACTION) + " soda pop that my friend can drink");
 
     }
 }

@@ -1,10 +1,8 @@
-import java.util.Scanner;
-
 public class Q9 {
 
     public static void main(String[] args) {
 
-        Scanner keyboard = new Scanner(System.in);
+        java.util.Scanner keyboard = new java.util.Scanner(System.in);
 
         System.out.print("Enter your height's feet : ");
         int heightInFeet = keyboard.nextInt();

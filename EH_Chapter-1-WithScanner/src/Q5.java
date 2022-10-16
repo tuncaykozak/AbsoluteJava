@@ -1,10 +1,8 @@
-import java.util.Scanner;
-
 public class Q5 {
 
     public static void main(String[] args) {
 
-        Scanner keyboard = new Scanner(System.in);
+        java.util.Scanner keyboard = new java.util.Scanner(System.in);
 
         System.out.print("Enter a sentence which includes \"hate\" : ");
         String input = keyboard.nextLine();
