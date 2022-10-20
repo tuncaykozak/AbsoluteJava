@@ -57,14 +57,14 @@ public class ThreeNumberEvolved {
 
     private static void printResult(int equalNumber, int number) {
 
-        String result = equalNumber + " = " + equalNumber;
+        String result = String.format("%d = %d", equalNumber, equalNumber);
 
         if (number > equalNumber)
-            result += " < " + number;
+            result = String.format("%s < %d", result, number);
         else if (number < equalNumber)
-            result = number + " < " + result;
+            result = String.format("%d < %s", number, result);
         else
-            result += " = " + number;
+            result = String.format("%s = %d", result, number);
 
         System.out.println(result);
     }
