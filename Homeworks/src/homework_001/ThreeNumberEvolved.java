@@ -5,8 +5,7 @@ public class ThreeNumberEvolved {
         input();
     }
 
-    private static void input() {
-
+    static void input() {
         java.util.Scanner keyboard = new java.util.Scanner(System.in);
 
         System.out.print("Enter the first number : ");
@@ -21,59 +20,37 @@ public class ThreeNumberEvolved {
         comparator(number1, number2, number3);
     }
 
-    private static void comparator(int number1, int number2, int number3) {
+    // number1 < number2 < number3
+    static void comparator(int number1, int number2, int number3) {
+        int temp;
 
-        int smaller = findSmaller(number1, number2);
-        int bigger = findBigger(number1, number2);
-
-        printResult(smaller, bigger, number3);
-
-    }
-
-    private static void printResult(int smaller, int bigger, int number3) {
-
-        if (smaller == bigger)
-            printResult(smaller, number3);
-
-        else {
-            if (number3 == smaller || number3 == bigger)
-                printResult(number3, (number3 == smaller) ? bigger : smaller);
-
-            else {
-                int midNumber = number3;
-
-                if (number3 > bigger) {
-                    midNumber = bigger;
-                    bigger = number3;
-                } else if (number3 < smaller) {
-                    midNumber = smaller;
-                    smaller = number3;
-                }
-                System.out.printf("%d < %d < %d", smaller, midNumber, bigger);
-            }
-
+        if (number1 >= number2) {
+            temp = number1;
+            number1 = number2;
+            number2 = temp;
         }
+        if (number1 >= number3) {
+            temp = number1;
+            number1 = number3;
+            number3 = temp;
+        }
+        if (number2 >= number3) {
+            temp = number2;
+            number2 = number3;
+            number3 = temp;
+        }
+
+        printResult(number1, number2, number3);
     }
 
-    private static void printResult(int equalNumber, int number) {
+    static void printResult(int number1, int number2, int number3) {
+        String operator1;
+        String operator2;
 
-        String result = String.format("%d = %d", equalNumber, equalNumber);
+        operator1 = number1 == number2 ? " = " : " < ";
+        operator2 = number2 == number3 ? " = " : " < ";
 
-        if (number > equalNumber)
-            result = String.format("%s < %d", result, number);
-        else if (number < equalNumber)
-            result = String.format("%d < %s", number, result);
-        else
-            result = String.format("%s = %d", result, number);
-
-        System.out.println(result);
+        System.out.printf("%d%s%d%s%d", number1, operator1, number2, operator2, number3);
     }
 
-    private static int findSmaller(int number1, int number2) {
-        return number1 < number2 ? number1 : number2;
-    }
-
-    private static int findBigger(int number1, int number2) {
-        return number1 > number2 ? number1 : number2;
-    }
 }
