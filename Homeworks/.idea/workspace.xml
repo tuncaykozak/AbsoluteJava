@@ -4,10 +4,15 @@
     <list default="true" id="51f21549-e749-4c4d-b62a-01f17a206fd8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Homeworks/homework_001/MiddleNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Homeworks/homework_001/MiddleNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Homeworks/homework_001/SignOfNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Homeworks/homework_001/SignOfNumber.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Homeworks/homework_001/ThreeNumberEvolved.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Homeworks/homework_001/ThreeNumberEvolved.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework_001/MiddleNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework_001/MiddleNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework_001/SignOfNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework_001/SignOfNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework_001/ThreeNumberEvolved.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework_001/ThreeNumberEvolved.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homeworks002/Armstrong/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homeworks002/Armstrong/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homeworks002/Armstrong/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homeworks002/Armstrong/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homeworks002/Armstrong/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homeworks002/Armstrong/Armstrong.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homeworks002/Armstrong/src/NumberUtil.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +41,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/EfficentHouse/EfficientHouseHomeWorks/Homeworks"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.ThreeNumberEvolved">
     <configuration name="MiddleNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homework_001.MiddleNumber" />
@@ -114,5 +120,16 @@
       <updated>1666210964507</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

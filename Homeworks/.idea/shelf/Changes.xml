@@ -1,0 +1,19 @@
+<changelist name="Changes" date="1666271036645" recycled="false">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/shelved.patch" />
+  <option name="DESCRIPTION" value="Changes" />
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Homeworks/homework_001/MiddleNumber.class" />
+    <option name="AFTER_PATH" value="out/production/Homeworks/homework_001/MiddleNumber.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/MiddleNumber.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Homeworks/homework_001/SignOfNumber.class" />
+    <option name="AFTER_PATH" value="out/production/Homeworks/homework_001/SignOfNumber.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/SignOfNumber.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Homeworks/homework_001/ThreeNumberEvolved.class" />
+    <option name="AFTER_PATH" value="out/production/Homeworks/homework_001/ThreeNumberEvolved.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/ThreeNumberEvolved.class" />
+  </binary>
+</changelist>

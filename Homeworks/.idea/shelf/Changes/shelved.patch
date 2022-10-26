@@ -1,0 +1,253 @@
+Index: src/homework_001/MiddleNumber.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package homework_001;\r\n\r\npublic class MiddleNumber {\r\n\r\n    public static void main(String[] args) {\r\n        printTheMiddleNumber();\r\n    }\r\n\r\n    private static void printTheMiddleNumber() {\r\n\r\n        java.util.Scanner keyboard = new java.util.Scanner(System.in);\r\n\r\n        System.out.print(\"Enter the first number : \");\r\n        int number1 = keyboard.nextInt();\r\n        System.out.print(\"Enter the second number : \");\r\n        int number2 = keyboard.nextInt();\r\n        System.out.print(\"Enter the third number : \");\r\n        int number3 = keyboard.nextInt();\r\n\r\n        keyboard.close();\r\n\r\n        System.out.printf(\"The middle number is : %d\", mid(number1, number2, number3));\r\n\r\n    }\r\n\r\n    private static int mid(int number1, int number2, int number3) {\r\n\r\n        int smaller = findSmaller(number1, number2);\r\n        int bigger = findBigger(number1, number2);\r\n\r\n        return findMedianNumber(smaller, bigger, number3);\r\n\r\n    }\r\n\r\n    // if there is no median number, it returns bigger number (not smaller)\r\n    private static int findMedianNumber(int smaller, int bigger, int number3) {\r\n\r\n        int medianNumber = number3;\r\n\r\n        if (number3 > bigger) {\r\n            medianNumber = bigger;\r\n        } else if (number3 < smaller) {\r\n            medianNumber = smaller;\r\n        } else\r\n            medianNumber = bigger;\r\n\r\n        return medianNumber;\r\n    }\r\n\r\n    private static int findSmaller(int number1, int number2) {\r\n        return number1 < number2 ? number1 : number2;\r\n    }\r\n\r\n    private static int findBigger(int number1, int number2) {\r\n        return number1 > number2 ? number1 : number2;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/homework_001/MiddleNumber.java b/src/homework_001/MiddleNumber.java
+--- a/src/homework_001/MiddleNumber.java	(revision c88cd4ccf717c5ae1a0eed270aea49fb71211236)
++++ b/src/homework_001/MiddleNumber.java	(date 1666269629013)
+@@ -23,35 +23,16 @@
+ 
+     }
+ 
+-    private static int mid(int number1, int number2, int number3) {
+-
+-        int smaller = findSmaller(number1, number2);
+-        int bigger = findBigger(number1, number2);
+-
+-        return findMedianNumber(smaller, bigger, number3);
++    static int mid(int number1, int number2, int number3) {
+ 
++        if((number1 > number2 && number1 < number3) || (number1 < number2 && number1 > number3))
++            return number1;
++        else if (number1 > number3 && number1 > number2)
++            return (number2 > number3) ? number2 : number3;
++        else
++            return (number2 < number3) ? number2 : number3;
+     }
+ 
+-    // if there is no median number, it returns bigger number (not smaller)
+-    private static int findMedianNumber(int smaller, int bigger, int number3) {
+-
+-        int medianNumber = number3;
+-
+-        if (number3 > bigger) {
+-            medianNumber = bigger;
+-        } else if (number3 < smaller) {
+-            medianNumber = smaller;
+-        } else
+-            medianNumber = bigger;
+-
+-        return medianNumber;
+-    }
+ 
+-    private static int findSmaller(int number1, int number2) {
+-        return number1 < number2 ? number1 : number2;
+-    }
++}
+ 
+-    private static int findBigger(int number1, int number2) {
+-        return number1 > number2 ? number1 : number2;
+-    }
+-}
+Index: src/homework_001/ThreeNumberEvolved.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package homework_001;\r\n\r\npublic class ThreeNumberEvolved {\r\n    public static void main(String[] args) {\r\n        input();\r\n    }\r\n\r\n    private static void input() {\r\n\r\n        java.util.Scanner keyboard = new java.util.Scanner(System.in);\r\n\r\n        System.out.print(\"Enter the first number : \");\r\n        int number1 = keyboard.nextInt();\r\n        System.out.print(\"Enter the second number : \");\r\n        int number2 = keyboard.nextInt();\r\n        System.out.print(\"Enter the third number : \");\r\n        int number3 = keyboard.nextInt();\r\n\r\n        keyboard.close();\r\n\r\n        comparator(number1, number2, number3);\r\n    }\r\n\r\n    private static void comparator(int number1, int number2, int number3) {\r\n\r\n        int smaller = findSmaller(number1, number2);\r\n        int bigger = findBigger(number1, number2);\r\n\r\n        printResult(smaller, bigger, number3);\r\n\r\n    }\r\n\r\n    private static void printResult(int smaller, int bigger, int number3) {\r\n\r\n        if (smaller == bigger)\r\n            printResult(smaller, number3);\r\n\r\n        else {\r\n            if (number3 == smaller || number3 == bigger)\r\n                printResult(number3, (number3 == smaller) ? bigger : smaller);\r\n\r\n            else {\r\n                int midNumber = number3;\r\n\r\n                if (number3 > bigger) {\r\n                    midNumber = bigger;\r\n                    bigger = number3;\r\n                } else if (number3 < smaller) {\r\n                    midNumber = smaller;\r\n                    smaller = number3;\r\n                }\r\n                System.out.printf(\"%d < %d < %d\", smaller, midNumber, bigger);\r\n            }\r\n\r\n        }\r\n    }\r\n\r\n    private static void printResult(int equalNumber, int number) {\r\n\r\n        String result = String.format(\"%d = %d\", equalNumber, equalNumber);\r\n\r\n        if (number > equalNumber)\r\n            result = String.format(\"%s < %d\", result, number);\r\n        else if (number < equalNumber)\r\n            result = String.format(\"%d < %s\", number, result);\r\n        else\r\n            result = String.format(\"%s = %d\", result, number);\r\n\r\n        System.out.println(result);\r\n    }\r\n\r\n    private static int findSmaller(int number1, int number2) {\r\n        return number1 < number2 ? number1 : number2;\r\n    }\r\n\r\n    private static int findBigger(int number1, int number2) {\r\n        return number1 > number2 ? number1 : number2;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/homework_001/ThreeNumberEvolved.java b/src/homework_001/ThreeNumberEvolved.java
+--- a/src/homework_001/ThreeNumberEvolved.java	(revision c88cd4ccf717c5ae1a0eed270aea49fb71211236)
++++ b/src/homework_001/ThreeNumberEvolved.java	(date 1666261350058)
+@@ -5,7 +5,7 @@
+         input();
+     }
+ 
+-    private static void input() {
++    static void input() {
+ 
+         java.util.Scanner keyboard = new java.util.Scanner(System.in);
+ 
+@@ -21,7 +21,7 @@
+         comparator(number1, number2, number3);
+     }
+ 
+-    private static void comparator(int number1, int number2, int number3) {
++    static void comparator(int number1, int number2, int number3) {
+ 
+         int smaller = findSmaller(number1, number2);
+         int bigger = findBigger(number1, number2);
+@@ -30,7 +30,7 @@
+ 
+     }
+ 
+-    private static void printResult(int smaller, int bigger, int number3) {
++    static void printResult(int smaller, int bigger, int number3) {
+ 
+         if (smaller == bigger)
+             printResult(smaller, number3);
+@@ -55,7 +55,7 @@
+         }
+     }
+ 
+-    private static void printResult(int equalNumber, int number) {
++    static void printResult(int equalNumber, int number) {
+ 
+         String result = String.format("%d = %d", equalNumber, equalNumber);
+ 
+@@ -69,11 +69,11 @@
+         System.out.println(result);
+     }
+ 
+-    private static int findSmaller(int number1, int number2) {
++    static int findSmaller(int number1, int number2) {
+         return number1 < number2 ? number1 : number2;
+     }
+ 
+-    private static int findBigger(int number1, int number2) {
++    static int findBigger(int number1, int number2) {
+         return number1 > number2 ? number1 : number2;
+     }
+ }
+Index: src/homework_001/SignOfNumber.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package homework_001;\r\n\r\npublic class SignOfNumber {\r\n    public static void main(String[] args) {\r\n\r\n        java.util.Scanner keyboard = new java.util.Scanner(System.in);\r\n        System.out.print(\"Enter the number : \");\r\n        int sign = sign(keyboard.nextInt());\r\n        keyboard.close();\r\n        System.out.printf(\"The sign of the number is : %d\", sign);\r\n    }\r\n\r\n    private static int sign(int number) {\r\n        return number == 0 ? 0 : number > 0 ? 1 : -1;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/homework_001/SignOfNumber.java b/src/homework_001/SignOfNumber.java
+--- a/src/homework_001/SignOfNumber.java	(revision c88cd4ccf717c5ae1a0eed270aea49fb71211236)
++++ b/src/homework_001/SignOfNumber.java	(date 1666264047254)
+@@ -4,13 +4,16 @@
+     public static void main(String[] args) {
+ 
+         java.util.Scanner keyboard = new java.util.Scanner(System.in);
++
+         System.out.print("Enter the number : ");
+         int sign = sign(keyboard.nextInt());
++
+         keyboard.close();
++
+         System.out.printf("The sign of the number is : %d", sign);
+     }
+ 
+-    private static int sign(int number) {
++    static int sign(int number) {
+         return number == 0 ? 0 : number > 0 ? 1 : -1;
+     }
+ }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"51f21549-e749-4c4d-b62a-01f17a206fd8\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/../EH_Chapter-1/out/production/EH_Chapter-1/C_StringOfWaltSavitch.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../EH_Chapter-1/out/production/EH_Chapter-1/C_StringOfWaltSavitch.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../EH_Chapter-1/out/production/EH_Chapter-1/I_IdealBodyWeightAccordingToHeight.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../EH_Chapter-1/out/production/EH_Chapter-1/I_IdealBodyWeightAccordingToHeight.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/homework_001/ThreeNumberEvolved.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/homework_001/ThreeNumberEvolved.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"package-info\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/..\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2GMuqDfnsUtHQAvAUCYDHsXvsI9\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;\n  }\n}</component>\r\n  <component name=\"RunManager\" selected=\"Application.ThreeNumberEvolved\">\r\n    <configuration name=\"MiddleNumber\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"homework_001.MiddleNumber\" />\r\n      <module name=\"Homeworks\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"homework_001.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"SignOfNumber\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"homework_001.SignOfNumber\" />\r\n      <module name=\"Homeworks\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"homework_001.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"ThreeNumberEvolved\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"homework_001.ThreeNumberEvolved\" />\r\n      <module name=\"Homeworks\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"homework_001.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"ThreeNumbers\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"homework_001.ThreeNumbers\" />\r\n      <module name=\"Homeworks\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"homework_001.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.ThreeNumberEvolved\" />\r\n        <item itemvalue=\"Application.MiddleNumber\" />\r\n        <item itemvalue=\"Application.SignOfNumber\" />\r\n        <item itemvalue=\"Application.ThreeNumbers\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"51f21549-e749-4c4d-b62a-01f17a206fd8\" name=\"Changes\" comment=\"\" />\r\n      <created>1666210964507</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1666210964507</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision c88cd4ccf717c5ae1a0eed270aea49fb71211236)
++++ b/.idea/workspace.xml	(date 1666270934633)
+@@ -2,8 +2,13 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="51f21549-e749-4c4d-b62a-01f17a206fd8" name="Changes" comment="">
+-      <change beforePath="$PROJECT_DIR$/../EH_Chapter-1/out/production/EH_Chapter-1/C_StringOfWaltSavitch.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EH_Chapter-1/out/production/EH_Chapter-1/C_StringOfWaltSavitch.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../EH_Chapter-1/out/production/EH_Chapter-1/I_IdealBodyWeightAccordingToHeight.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EH_Chapter-1/out/production/EH_Chapter-1/I_IdealBodyWeightAccordingToHeight.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Homeworks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Homeworks.iml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/Homeworks/homework_001/MiddleNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Homeworks/homework_001/MiddleNumber.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/Homeworks/homework_001/SignOfNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Homeworks/homework_001/SignOfNumber.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/Homeworks/homework_001/ThreeNumberEvolved.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Homeworks/homework_001/ThreeNumberEvolved.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/homework_001/MiddleNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework_001/MiddleNumber.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/homework_001/SignOfNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework_001/SignOfNumber.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/homework_001/ThreeNumberEvolved.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework_001/ThreeNumberEvolved.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -33,13 +38,30 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "last_opened_file_path": "C:/EfficentHouse/EfficientHouseHomeWorks/Homeworks",
++    "project.structure.last.edited": "SDKs",
++    "project.structure.proportion": "0.0",
++    "project.structure.side.proportion": "0.2",
++    "settings.editor.selected.configurable": "configurable.group.appearance"
+   }
+-}</component>
+-  <component name="RunManager" selected="Application.ThreeNumberEvolved">
++}]]></component>
++  <component name="RunManager" selected="Application.MiddleNumber">
++    <configuration name="MiddleNumber (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="homework_001.MiddleNumber" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="homework_001.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
+     <configuration name="MiddleNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="homework_001.MiddleNumber" />
+       <module name="Homeworks" />
+@@ -94,8 +116,9 @@
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="Application.MiddleNumber (1)" />
++        <item itemvalue="Application.MiddleNumber" />
+         <item itemvalue="Application.ThreeNumberEvolved" />
+-        <item itemvalue="Application.MiddleNumber" />
+         <item itemvalue="Application.SignOfNumber" />
+         <item itemvalue="Application.ThreeNumbers" />
+       </list>
+@@ -112,4 +135,15 @@
+     </task>
+     <servers />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
+ </project>
+\ No newline at end of file
+Index: Homeworks.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"JAVA_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\" inherit-compiler-output=\"true\">\r\n    <exclude-output />\r\n    <content url=\"file://$MODULE_DIR$\">\r\n      <sourceFolder url=\"file://$MODULE_DIR$/src\" isTestSource=\"false\" />\r\n    </content>\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Homeworks.iml b/Homeworks.iml
+--- a/Homeworks.iml	(revision c88cd4ccf717c5ae1a0eed270aea49fb71211236)
++++ b/Homeworks.iml	(date 1666270553373)
+@@ -3,7 +3,9 @@
+   <component name="NewModuleRootManager" inherit-compiler-output="true">
+     <exclude-output />
+     <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++      <excludeFolder url="file://$MODULE_DIR$" />
+     </content>
+     <orderEntry type="inheritedJdk" />
+     <orderEntry type="sourceFolder" forTests="false" />
