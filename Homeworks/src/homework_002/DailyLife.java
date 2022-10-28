@@ -31,16 +31,16 @@ public class DailyLife {
         hour = studyTime(hour);
 
         haveLunch(hour);
-        hour = oneHourAction(hour);
+        hour++;
 
         study(hour);
         hour = studyTime(hour);
 
         rest(hour);
-        hour = oneHourAction(hour);
+        hour++;
 
         haveDinner(hour);
-        hour = oneHourAction(hour);
+        hour++;
 
         efficientHours(hour);
         hour = studyTime(hour);
@@ -94,11 +94,7 @@ public class DailyLife {
         }
     }
 
-    public static int studyTime(int hour){
+    public static int studyTime(int hour) {
         return hour += 4;
-    }
-
-    public static int oneHourAction(int hour){
-        return hour += 1;
     }
 }
