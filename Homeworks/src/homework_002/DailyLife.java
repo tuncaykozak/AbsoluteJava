@@ -28,17 +28,23 @@ public class DailyLife {
     private static void my24Hours(int hour) {
 
         study(hour);
-        hour += 4;
+        hour = studyTime(hour);
+
         haveLunch(hour);
-        hour += 1;
+        hour = oneHourAction(hour);
+
         study(hour);
-        hour += 4;
+        hour = studyTime(hour);
+
         rest(hour);
-        hour += 1;
+        hour = oneHourAction(hour);
+
         haveDinner(hour);
-        hour += 1;
+        hour = oneHourAction(hour);
+
         efficientHours(hour);
-        hour += 4;
+        hour = studyTime(hour);
+
         sleep(hour);
 
     }
@@ -86,5 +92,13 @@ public class DailyLife {
             System.out.printf("%02d:00 = ZzZ\n", hour % 24);
             hour++;
         }
+    }
+
+    public static int studyTime(int hour){
+        return hour += 4;
+    }
+
+    public static int oneHourAction(int hour){
+        return hour += 1;
     }
 }
