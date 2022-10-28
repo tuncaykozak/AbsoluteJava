@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51f21549-e749-4c4d-b62a-01f17a206fd8" name="Changes" comment="Armstrong Example updated">
+    <list default="true" id="51f21549-e749-4c4d-b62a-01f17a206fd8" name="Changes" comment="Updated Homework02">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homework_002/DailyLife.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework_002/DailyLife.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +131,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666968283451</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated Homework02">
+      <created>1666978316520</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666978316520</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated Homework02">
+      <created>1666981199806</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666981199806</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,6 +161,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Armstrong Example updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Armstrong Example updated" />
+    <MESSAGE value="Updated Homework02" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Homework02" />
   </component>
 </project>
