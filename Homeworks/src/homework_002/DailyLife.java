@@ -39,7 +39,7 @@ public class DailyLife {
         hour += 1;
         efficientHours(hour);
         hour += 4;
-        sleep(24);
+        sleep(hour);
 
     }
 
