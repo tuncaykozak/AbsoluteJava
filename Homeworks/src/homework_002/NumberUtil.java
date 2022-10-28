@@ -4,6 +4,7 @@ public class NumberUtil {
     public static void main(String[] args) {
         getArmstrongNumbers();
     }
+
     public static void getArmstrongNumbers() {
 
         int number = -6; // 0 -> start from 1
@@ -18,31 +19,23 @@ public class NumberUtil {
         if (number < 0) {
             System.out.printf("%d is a negative number!\n", number);
             return false;
-
-        } else {
-            int total = 0;
-            int numberOfDigits = countDigits(number);
-
-            /*
-            int iteration = 0;
-
-            do {
-                int digit = (number / pow(10, iteration)) % 10;
-                total += pow(digit, numberOfDigits);
-            }
-            while (++iteration < numberOfDigits);
-            */
-
-            int iterationNumber = number;
-            do {
-                total += pow(iterationNumber % 10, numberOfDigits);
-                iterationNumber /= 10;
-            }
-            while (iterationNumber > 0);
-
-            return (total == number);
         }
+        return (number == getPowerOfDigits(number));
+    }
 
+    public static int getPowerOfDigits(int number) {
+
+        int total = 0;
+        int numberOfDigits = countDigits(number);
+        int iterationNumber = number;
+
+        do {
+            total += pow(iterationNumber % 10, numberOfDigits);
+            iterationNumber /= 10;
+        }
+        while (iterationNumber > 0);
+
+        return total;
     }
 
 
