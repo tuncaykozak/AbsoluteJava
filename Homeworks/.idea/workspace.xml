@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51f21549-e749-4c4d-b62a-01f17a206fd8" name="Changes" comment="">
+    <list default="true" id="51f21549-e749-4c4d-b62a-01f17a206fd8" name="Changes" comment="Armstrong Example updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Homeworks/homework_001/MiddleNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Homeworks/homework_001/MiddleNumber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Homeworks/homework_001/SignOfNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Homeworks/homework_001/SignOfNumber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Homeworks/homework_001/ThreeNumberEvolved.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Homeworks/homework_001/ThreeNumberEvolved.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Homeworks002/Armstrong/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Homeworks002/Armstrong/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Homeworks002/Armstrong/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Homeworks002/Armstrong/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Homeworks002/Armstrong/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Homeworks002/Armstrong/Armstrong.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Homeworks002/Armstrong/src/NumberUtil.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,20 +31,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/EfficentHouse/EfficientHouseHomeWorks/Homeworks"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/EfficentHouse/EfficientHouseHomeWorks/Homeworks&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.ThreeNumberEvolved">
+}</component>
+  <component name="RunManager" selected="Application.DailyLife">
+    <configuration name="DailyLife" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homework_002.DailyLife" />
+      <module name="Homeworks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="homework_002.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MiddleNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homework_001.MiddleNumber" />
       <module name="Homeworks" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="homework_001.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NumberUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homework_002.NumberUtil" />
+      <module name="Homeworks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="homework_002.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,25 +104,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreeNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homework_001.ThreeNumbers" />
-      <module name="Homeworks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="homework_001.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DailyLife" />
+        <item itemvalue="Application.NumberUtil" />
         <item itemvalue="Application.ThreeNumberEvolved" />
         <item itemvalue="Application.MiddleNumber" />
         <item itemvalue="Application.SignOfNumber" />
-        <item itemvalue="Application.ThreeNumbers" />
       </list>
     </recent_temporary>
   </component>
@@ -119,6 +123,14 @@
       <option name="presentableId" value="Default" />
       <updated>1666210964507</updated>
     </task>
+    <task id="LOCAL-00001" summary="Armstrong Example updated">
+      <created>1666968283451</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666968283451</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,5 +143,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Armstrong Example updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Armstrong Example updated" />
   </component>
 </project>
