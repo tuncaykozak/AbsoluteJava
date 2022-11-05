@@ -15,12 +15,16 @@ public class Q3 {
             System.out.print("Enter the mass of car : ");
             double weightOfCar = scanner.nextDouble();
 
-            int place = selectPlace();
-
-            System.out.printf("The weight of car on %s is %.2f Newton\n", (place == 1 ? "Earth" : "Moon"), calculateWeight(place, weightOfCar));
-
+            showWeight(weightOfCar);
         }
 
+    }
+
+    public static void showWeight(double weightOfCar) {
+
+        int place = selectPlace();
+
+        System.out.printf("The weight of car on %s is %.2f Newton\n", (place == 1 ? "Earth" : "Moon"), calculateWeight(place, weightOfCar));
     }
 
     public static boolean isWantedContinue() {
@@ -36,7 +40,7 @@ public class Q3 {
 
         weightOfCar *= 9.81;
 
-        if(selection == 1)
+        if (selection == 1)
             return weightOfCar;
 
         return weightOfCar / 6;
@@ -52,8 +56,6 @@ public class Q3 {
         System.out.print("Enter your selection : ");
 
         return keyboard.nextInt();
-
-
 
     }
 

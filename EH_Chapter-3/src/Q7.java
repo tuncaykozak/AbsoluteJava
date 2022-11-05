@@ -27,7 +27,7 @@ public class Q7 {
     private static boolean isWantedContinue() {
 
         java.util.Scanner scanner = new java.util.Scanner(System.in);
-        System.out.print("For calculate the weight enter 'Y' ( Others for EXIT) : ");
+        System.out.print("For calculate the Armstrong numbers enter 'Y' ( Others for EXIT) : ");
 
         return scanner.nextLine().equalsIgnoreCase("y");
     }

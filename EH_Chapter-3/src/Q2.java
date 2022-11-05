@@ -16,7 +16,6 @@ public class Q2 {
         showPattern(wrongPatternWithWrongChar);
         showPattern(wrongPattern);
 
-
     }
 
     public static void showPattern(String pattern){
@@ -29,24 +28,21 @@ public class Q2 {
         for(int i = 0; i < pattern.length(); i++){
 
             String ch = pattern.substring(i, i + 1);
+
             if(!ch.equalsIgnoreCase("R")  && !ch.equalsIgnoreCase("G") && !ch.equalsIgnoreCase("B") )
                 return false;
+
             if(i < pattern.length() -1){
+
                 if(ch.equalsIgnoreCase(pattern.substring(i + 1, i +2)))
                     return false;
-            }
 
+            }
 
         }
 
         return true;
 
     }
-
-
-
-
-
-
 
 }
