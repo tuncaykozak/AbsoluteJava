@@ -12,17 +12,18 @@ public class Q5 {
         double interestRatePerMonth = 1.5;
         double monthlyPayment = 50;
 
-        System.out.printf("Payment will take up to %d months!",
-                calculatePaymentPeriod(cost, interestRatePerMonth, monthlyPayment));
+        calculatePaymentPeriod(cost, interestRatePerMonth, monthlyPayment);
 
     }
 
-    public static int calculatePaymentPeriod(double cost, double interestRatePerMonth, double monthlyPayment) {
+    public static void calculatePaymentPeriod(double cost, double interestRatePerMonth, double monthlyPayment) {
 
         int numberOfMonth = 0;
+        double totalInterest = 0;
 
         while (cost > 0) {
 
+            totalInterest += cost * (interestRatePerMonth / 100);
             cost *= (interestRatePerMonth / 100 + 1);
             cost -= monthlyPayment;
 
@@ -30,7 +31,8 @@ public class Q5 {
 
         }
 
-        return numberOfMonth;
+        System.out.printf("Payment will take up to %d months and total paid interest is %.2f", numberOfMonth, totalInterest);
+
 
     }
 }
