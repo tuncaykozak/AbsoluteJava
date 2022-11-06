@@ -9,10 +9,11 @@ public class Q5 {
     public static void test() {
 
         double cost = 1000;
-        double interestRatePerMonth = 1.5;
+        double interestRatePerYear = 18;
+        // double interestRatePerMonth = interestRatePerYear / 12;
         double monthlyPayment = 50;
 
-        calculatePaymentPeriod(cost, interestRatePerMonth, monthlyPayment);
+        calculatePaymentPeriod(cost, interestRatePerYear / 12, monthlyPayment);
 
     }
 
