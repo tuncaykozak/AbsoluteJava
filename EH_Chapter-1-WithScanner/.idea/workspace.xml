@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="613d08c6-f150-4fec-9ddf-30e86df197ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../EH_Chapter-1/out/production/EH_Chapter-1/C_StringOfWaltSavitch.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EH_Chapter-1/out/production/EH_Chapter-1/C_StringOfWaltSavitch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EH_Chapter-1/out/production/EH_Chapter-1/I_IdealBodyWeightAccordingToHeight.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EH_Chapter-1/out/production/EH_Chapter-1/I_IdealBodyWeightAccordingToHeight.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EH_Chapter-3/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homeworks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Homeworks/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homeworks/out/production/Homeworks/homework_002/DailyLife.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Homeworks/out/production/Homeworks/homework_002/DailyLife.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homeworks/out/production/Homeworks/homework_003/armstrong/NumberUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Homeworks/out/production/Homeworks/homework_003/armstrong/NumberUtil.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,13 +34,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/EfficentHouse/EfficientHouseHomeWorks"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/EfficentHouse/EfficientHouseHomeWorks/EH_Chapter-1-WithScanner&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Q10">
     <configuration name="Q10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Q10" />

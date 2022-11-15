@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51f21549-e749-4c4d-b62a-01f17a206fd8" name="Changes" comment="Updated Homework02">
+    <list default="true" id="51f21549-e749-4c4d-b62a-01f17a206fd8" name="Changes" comment="homework3 is done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework_002/DailyLife.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework_002/DailyLife.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Homeworks/homework_002/DailyLife.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Homeworks/homework_002/DailyLife.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Homeworks/homework_003/armstrong/NumberUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Homeworks/homework_003/armstrong/NumberUtil.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,20 +33,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/EfficentHouse/EfficientHouseHomeWorks/Homeworks&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "C:/EfficentHouse/EfficientHouseHomeWorks/Homeworks"
   }
-}</component>
-  <component name="RunManager" selected="Application.DailyLife">
-    <configuration name="DailyLife" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homework_002.DailyLife" />
+}]]></component>
+  <component name="RunManager" selected="Application.Prime">
+    <configuration name="Example7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homework_003.whiletofor.Example7" />
       <module name="Homeworks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homework_002.*" />
+          <option name="PATTERN" value="homework_003.whiletofor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -53,12 +55,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MiddleNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homework_001.MiddleNumber" />
+    <configuration name="Factorization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homework_003.primenumber.Factorization" />
       <module name="Homeworks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homework_001.*" />
+          <option name="PATTERN" value="homework_003.primenumber.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -67,11 +69,11 @@
       </method>
     </configuration>
     <configuration name="NumberUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homework_002.NumberUtil" />
+      <option name="MAIN_CLASS_NAME" value="homework_003.armstrong.NumberUtil" />
       <module name="Homeworks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homework_002.*" />
+          <option name="PATTERN" value="homework_003.armstrong.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,12 +81,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignOfNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homework_001.SignOfNumber" />
+    <configuration name="Prime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homework_003.primenumber.Prime" />
       <module name="Homeworks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homework_001.*" />
+          <option name="PATTERN" value="homework_003.primenumber.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,12 +94,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreeNumberEvolved" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homework_001.ThreeNumberEvolved" />
+    <configuration name="PrimeNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homework_003.primenumber.PrimeNumber" />
       <module name="Homeworks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homework_001.*" />
+          <option name="PATTERN" value="homework_003.primenumber.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DailyLife" />
+        <item itemvalue="Application.Prime" />
         <item itemvalue="Application.NumberUtil" />
-        <item itemvalue="Application.ThreeNumberEvolved" />
-        <item itemvalue="Application.MiddleNumber" />
-        <item itemvalue="Application.SignOfNumber" />
+        <item itemvalue="Application.PrimeNumber" />
+        <item itemvalue="Application.Factorization" />
+        <item itemvalue="Application.Example7" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666981199806</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="homework3 is done">
+      <created>1667145452898</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667145452899</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +171,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Armstrong Example updated" />
     <MESSAGE value="Updated Homework02" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Homework02" />
+    <MESSAGE value="homework3 is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework3 is done" />
   </component>
 </project>
