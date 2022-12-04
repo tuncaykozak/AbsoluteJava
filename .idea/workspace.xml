@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbd3d9a9-0294-4b6a-8924-75c95d85721e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/EH_Chapter-1/out/production/EH_Chapter-1/C_StringOfWaltSavitch.class" beforeDir="false" afterPath="$PROJECT_DIR$/EH_Chapter-1/out/production/EH_Chapter-1/C_StringOfWaltSavitch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EH_Chapter-1/out/production/EH_Chapter-1/I_IdealBodyWeightAccordingToHeight.class" beforeDir="false" afterPath="$PROJECT_DIR$/EH_Chapter-1/out/production/EH_Chapter-1/I_IdealBodyWeightAccordingToHeight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EH_Chapter-3/out/production/EH_Chapter-3/Q2.class" beforeDir="false" afterPath="$PROJECT_DIR$/EH_Chapter-3/out/production/EH_Chapter-3/Q2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EH_Chapter-3/src/Q2.java" beforeDir="false" afterPath="$PROJECT_DIR$/EH_Chapter-3/src/Q2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <branch-grouping />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -26,7 +29,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/EfficentHouse/ErenHomeWorks"
+    "last_opened_file_path": "C:/BA_Boost/SpringMA",
+    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -39,5 +43,16 @@
       <updated>1664571962735</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

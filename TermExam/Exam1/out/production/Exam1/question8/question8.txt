@@ -1,0 +1,9 @@
+
+
+1 - Problemi anlamak, kavramak
+2 - Problemin gerekliliklerini (isterler, amac) belirlemek
+3 - Cozum icin onem sirasini belirlemek ve cozum sablonu olusturmak
+4 - Sablona gore nihai cozum ve cozum yollarini belirlemek
+5 - Test etmek (tum test sonuclari kaydedilmeli)
+6 - Test sonucuna istinaden gerekirse adim-2,3,4 u tekrarlamak (revizyon)
+7 - Cozumu yayinlamak

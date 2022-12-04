@@ -1,0 +1,7 @@
+
+
+Enter a number:n (enter'a basilir)
+n-1
+-----------------------------------
+n-1n-2n-3.........0 (bitisik olarak)
+(bu satirda program sonlanir)

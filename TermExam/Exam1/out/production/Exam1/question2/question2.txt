@@ -1,0 +1,18 @@
+
+    Primitive Types :
+
+        -Byte (1 Byte)
+        -Short (2 Byte)
+        -int (4 Byte)
+        -Long (8 Byte)
+
+        -Float (4 Byte)
+        -Double (8 Byte)
+
+        -Boolean
+        -Char
+
+
+    Type Casting :
+
+

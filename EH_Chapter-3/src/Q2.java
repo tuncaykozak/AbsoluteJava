@@ -10,11 +10,11 @@ public class Q2 {
 
         java.util.Scanner kb = new java.util.Scanner(System.in);
 
-        int count = 0;
         String beforeColor = "";
         String pattern = "";
+        int count = 0;
 
-        do {
+        while (count < 5) {
             System.out.print("Enter the color of pattern : ");
             String nextColor = kb.nextLine().substring(0, 1);
 
@@ -23,22 +23,23 @@ public class Q2 {
                 pattern += nextColor.toUpperCase();
                 count++;
             }
-        }
-        while (count < 5);
 
-        System.out.println(pattern);
+        }
+
+
+        System.out.printf("\nThe final pattern is :  %s", pattern);
 
     }
 
     public static boolean checkPattern(String currentColor, String beforeColor) {
 
         if (!currentColor.equalsIgnoreCase("R") && !currentColor.equalsIgnoreCase("G") && !currentColor.equalsIgnoreCase("B")) {
-            System.out.println("You have to enter R / G / B !");
+            // System.out.println("You have to enter R / G / B !");
             return false;
         }
 
         if (currentColor.equalsIgnoreCase(beforeColor)) {
-            System.out.println("You can not enter previous color!");
+            // System.out.println("You can not enter previous color!");
             return false;
         }
 
