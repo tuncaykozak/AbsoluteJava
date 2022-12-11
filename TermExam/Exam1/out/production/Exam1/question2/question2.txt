@@ -1,11 +1,13 @@
 
     Primitive Types :
 
+         (Integers)
         -Byte (1 Byte)
         -Short (2 Byte)
         -int (4 Byte)
         -Long (8 Byte)
 
+        (Floating-points)
         -Float (4 Byte)
         -Double (8 Byte)
 
@@ -14,5 +16,13 @@
 
 
     Type Casting :
+    Integer tiplere kendi icinde asagidan yukariya rahatlikla cast edilir (memory olarak sorunlu degil)
+                                 yukaridan asgiya bilgi kaybi yasanabilir, dikkatli olunmalidir.
+
+    Integer tipler floating-point tiplere yine cast edilebilir. bilgi kaybi yasanabilir
+    Floating tipler Integer tiplere cast edilirse hem limitlerinden dolayi bilgi kaybi ihtimali ile birlikte
+        , den sonraki kisimda bilgi kaybi kesin yasanacaktir.
+
+
 
 

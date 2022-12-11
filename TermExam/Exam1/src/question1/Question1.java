@@ -1,6 +1,7 @@
 package question1;
 
 public class Question1 {
+
     public static void main(String[] args) {
 
         test();
@@ -9,33 +10,68 @@ public class Question1 {
 
     public static void test() {
 
-        for (int i = 10; i <= 100; i++) {
-            getNumberOfChainToFindPalindrome(i);
+        getNumberMaxChainToPalindrome(10, 100);
+
+    }
+
+    public static void getNumberMaxChainToPalindrome(int startingNumber, int finishingNumber) {
+
+        int maxChain = 0;
+
+        for (int i = startingNumber; i <= finishingNumber; i++) {
+            if (getNumberOfChainToFindPalindrome(i) > maxChain)
+                maxChain = getNumberOfChainToFindPalindrome(i);
+        }
+
+        printNumbersWithHighestNumberOfChain(maxChain, startingNumber, finishingNumber);
+
+    }
+
+    public static void printNumbersWithHighestNumberOfChain(int maxChain, int startingNumber, int finishingNumber) {
+
+        System.out.printf("The numbers with the highest number of chain(%d) are :%n", maxChain);
+
+        for (int i = startingNumber; i <= finishingNumber; i++) {
+            if (getNumberOfChainToFindPalindrome(i) == maxChain) {
+                System.out.println(i);
+            }
         }
 
     }
 
-    public static int getNumberOfChainToFindPalindrome(int number) {
+    public static int getNumberOfChainToFindPalindrome(long number) {
 
-        System.out.println(number + " " + isPalindrome(number));
-        // burada daha kodlar var ama
-        return 0;
+        int numberOfChain = 0;
+
+        do {
+            numberOfChain++;
+            number += reversedNumber(number);
+        } while (!isPalindrome(number));
+
+        return numberOfChain;
+
     }
 
-    public static boolean isPalindrome(int number) {
+    public static boolean isPalindrome(long number) {
+
+        return number == reversedNumber(number);
+    }
+
+    public static long reversedNumber(long number) {
+
         int numberOfDigits = countDigit(number);
-        int tempNumber = number;
-        int tempAddition = 0;
+        long reversedNumber = 0;
 
         for (int i = 0; i < numberOfDigits; i++) {
-            tempAddition += tempNumber % 10 * (pow(10, numberOfDigits - (i + 1)));
-            tempNumber /= 10;
+            reversedNumber += number % 10 * (pow(10, numberOfDigits - (i + 1)));
+            number /= 10;
         }
+        return reversedNumber;
 
-        return number == tempAddition;
     }
 
-    public static int countDigit(int number) {
+    public static int countDigit(long number) {
+
         int count = 0;
 
         do {
@@ -47,9 +83,9 @@ public class Question1 {
 
     }
 
-    public static int pow(int a, int b) {
+    public static long pow(int a, int b) {
 
-        int result = 1;
+        long result = 1;
 
         for (int i = 0; i < b; i++) {
             result *= a;
